@@ -1,0 +1,317 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+#container {
+  width: 1440px;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+}
+
+#boxLeft {
+  width: 736px;
+  height: 900px;
+  background: var(--Gray---50, #f8fafc);
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 16%,
+    #f7dfd9 16%,
+    #f7dfd9 26%,
+    #ffffff 26%,
+    #ffffff 31%,
+    #f7dfd9 31%,
+    #f7dfd9 41%,
+    #ffffff 41%,
+    #ffffff 46%,
+    #f7dfd9 46%,
+    #f7dfd9 56%,
+    #ffffff 56%,
+    #ffffff 61%,
+    #f7dfd9 61%,
+    #f7dfd9 70.5%,
+    #ffffff 70.5%,
+    #ffffff 76%,
+    #f7dfd9 76%,
+    #f7dfd9 86%,
+    #ffffff 86%,
+    #ffffff 91%,
+    #f7dfd9 91%,
+    #f7dfd9 100%
+  );
+  z-index: 2;
+}
+
+#boxRight {
+  width: 736px;
+  height: 900px;
+  background: linear-gradient(
+    to right,
+    #7c3aed 0%,
+    #7c3aed 6%,
+    #904c9e 6%,
+    #904c9e 15%,
+    #7c3aed 15%,
+    #7c3aed 21%,
+    #904c9e 21%,
+    #904c9e 30%,
+    #7c3aed 30%,
+    #7c3aed 36%,
+    #904c9e 36%,
+    #904c9e 45%,
+    #7c3aed 45%,
+    #7c3aed 51%,
+    #904c9e 51%,
+    #904c9e 60%,
+    #7c3aed 60%,
+    #7c3aed 66%,
+    #904c9e 66%,
+    #904c9e 75%,
+    #7c3aed 75%,
+    #7c3aed 81%,
+    #7c3aed 81%,
+    #7c3aed 100%
+  );
+  z-index: 2;
+  mix-blend-mode: screen;
+}
+
+#boxRight img {
+  background: url(<path-to-image>),
+    lightgray -457.778px 0px / 224.396% 103.222% no-repeat;
+  background: #7c3aed;
+  mix-blend-mode: screen;
+}
+
+#boxLogo {
+  width: 159.497px;
+  height: 54px;
+  margin: 40px 0 0 112px;
+}
+
+#BoxMain {
+  width: 384px;
+  height: 483px;
+  margin: 114px 0 0 112px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#MainText {
+  width: 351px;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#MainInput {
+  width: 384px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+#MainText h1 {
+  width: 316px;
+  height: 55px;
+  margin: 0;
+  color: var(--Gray-800, #1e293b);
+  font-family: Titillium Web;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#MainText p {
+  width: 351px;
+  height: 48px;
+  color: var(--Gray-600, #475569);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+#InputGroup {
+  width: 384px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#FrameBox1 {
+  width: 384px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#emailBox,
+#senhaBox {
+  width: auto;
+  height: 21px;
+  padding: 16px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--Gray-200, #e2e8f0);
+  background: #fff;
+}
+
+#FrameBox2 {
+  width: 384px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#senha {
+  width: auto;
+  height: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: auto;
+}
+
+#Esqueceu {
+  color: var(--Purple, #7c3aed);
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+label {
+  width: auto;
+  height: 21px;
+  color: var(--Gray-800, #1e293b);
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+::placeholder {
+  color: var(--Gray-400, #94a3b8);
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#senhaBox::placeholdera::after {
+  color: var(--Gray-400, #94a3b8);
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-image: url(assets/eye-off.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#senhaBox::placeholdera::before {
+  content: url(assets/eye-off.svg);
+}
+
+#buttonEntrar {
+  width: 384px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--Purple, #7c3aed);
+}
+
+#buttonEntrar button {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 0;
+}
+
+.Increva {
+  color: var(--Gray-600, #475569);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.Increva a {
+  color: var(--Purple, #7c3aed);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  text-decoration: none;
+}
+
+#buttonEntrar:hover {
+  border-radius: 4px;
+  background: #9f67ff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.Increva a:hover {
+  color: var(--Purple, #7c3aed);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+#emailBox:hover,
+#senhaBox:hover {
+  border-radius: 4px;
+  border: 1px solid var(--Purple, #7c3aed);
+  background: #fff;
+}
+
+#senhaBox::placeholder:hover {
+  border-radius: 4px;
+  border: 1px solid var(--Gray-200, #e2e8f0);
+  background: #fff;
+}
+
+@media screen and (max-width: 1439px) and (min-width: 0px) {
+  #container {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
